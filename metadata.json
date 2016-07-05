@@ -1,0 +1,17 @@
+{
+  "name": "zetten-sonarqube",
+  "version": "0.1.0",
+  "author": "zetten",
+  "summary": "Installation and management of SonarQube code quality platform.",
+  "license": "Apache-2.0",
+  "source": "https://github.com/Zetten/puppet-sonarqube",
+  "project_page": "https://github.com/Zetten/puppet-sonarqube",
+  "issues_url": "https://github.com/Zetten/puppet-sonarqube/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 4.11.0"
+    }
+  ],
+  "data_provider": "hiera"
+}

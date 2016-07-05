@@ -1,0 +1,9 @@
+fixtures:
+  forge_modules:
+    apt: 'puppetlabs-apt'
+    concat: 'puppetlabs-concat'
+    mysql: 'puppetlabs-mysql'
+    postgresql: 'puppetlabs-postgresql'
+    stdlib: 'puppetlabs-stdlib'
+  symlinks:
+    sonarqube: "#{source_dir}"

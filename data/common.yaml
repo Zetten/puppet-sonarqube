@@ -1,0 +1,26 @@
+---
+# Installation parameters
+sonarqube::manage_install: true
+sonarqube::version: '5.6'
+sonarqube::sonar_home: /opt/sonarqube
+sonarqube::manage_user: true
+sonarqube::user: sonarqube
+sonarqube::group: sonarqube
+
+# Database parameters
+sonarqube::manage_db: false
+sonarqube::db_type: postgresql
+sonarqube::db_host: localhost
+sonarqube::db_name: sonarqube
+sonarqube::db_user: sonarqube
+sonarqube::db_password: sonarqube
+sonarqube::jdbc_url: undef
+
+# Service parameters
+sonarqube::manage_service: true
+sonarqube::service_name: sonarqube
+sonarqube::service_enable: true
+sonarqube::service_ensure: running
+
+# Configuration parameters
+sonarqube::properties: {}
