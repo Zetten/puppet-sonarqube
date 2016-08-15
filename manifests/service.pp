@@ -17,7 +17,8 @@ class sonarqube::service {
       }),
     } ~>
     exec { 'systemctl-daemon-reload':
-      command => 'systemctl daemon-reload',
+      command     => 'systemctl daemon-reload',
+      refreshonly => true,
     }
 
     service { 'sonarqube':
