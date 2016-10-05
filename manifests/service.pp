@@ -18,6 +18,7 @@ class sonarqube::service {
     } ~>
     exec { 'systemctl-daemon-reload':
       command     => 'systemctl daemon-reload',
+      path        => ['/usr/bin', '/bin'],
       refreshonly => true,
     }
 

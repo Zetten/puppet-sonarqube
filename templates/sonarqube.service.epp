@@ -16,7 +16,7 @@ StandardError=syslog
 SyslogIdentifier=sonar
 ExecStart=<%= $sonarhome %>/bin/<%= $arch %>/sonar.sh start
 ExecStop=<%= $sonarhome %>/bin/<%= $arch %>/sonar.sh stop
-PIDFile=/var/run/sonarqube/SonarQube.pid
+PIDFile=<%= $sonarhome %>/bin/<%= $arch %>/SonarQube.pid
 OOMScoreAdjust=-1000
 LimitCPU=infinity
 LimitFSIZE=infinity
